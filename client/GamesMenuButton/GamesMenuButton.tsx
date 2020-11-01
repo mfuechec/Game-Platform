@@ -1,6 +1,5 @@
 import * as React from "react";
 import Button from '@material-ui/core/Button';
-import { SportsRugbySharp } from "../../node_modules/@material-ui/icons/index";
 
 export default function GamesMenuButton({handleClick, openSideBar}) {
 

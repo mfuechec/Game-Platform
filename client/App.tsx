@@ -2,6 +2,7 @@ import * as React from "react";
 import TopBar from './TopBar/TopBar';
 import GamesMenuButton from './GamesMenuButton/GamesMenuButton';
 import SideBar from './SideBar/SideBar';
+import GamePortal from './GamePortal/GamePortal';
 
 export default function App() {
 
@@ -13,11 +14,14 @@ export default function App() {
 
   return (
     <>
-      <div id='topContainer'>
+      <div className='row'>
         <GamesMenuButton handleClick={handleClick} openSideBar={openSideBar} />
         <TopBar/>
       </div>
-      <SideBar openSideBar={openSideBar}/>
+      <div className='row'>
+        <SideBar openSideBar={openSideBar}/>
+        <GamePortal />
+      </div>
     </>
   )
 }

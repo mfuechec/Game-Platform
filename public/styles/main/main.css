@@ -6,7 +6,11 @@ body {
   overflow: hidden;
 }
 
-#topContainer {
+p {
+  margin: 0;
+}
+
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +19,7 @@ body {
 #topbar {
   width: 80vw;
   text-align: center;
+  height: 5vh;
   border-bottom: 1px solid black;
 }
 
@@ -29,7 +34,27 @@ body {
 
 #sidebar {
   width: 10vw;
-  height: 100vh;
+  height: 95vh;
+}
+
+#sidebarContents {
   background-color: rgba(0, 0, 0, 0.5);
+  height: 95vh;
+  width: 20vw;
+}
+
+.gameName {
+  text-align: center;
+  padding-top: 1vh;
+}
+
+#gamePortal {
+  text-align: center;
+  width: 80vw;
+  height: 95vh;
+}
+
+#selection {
+  margin-top: 49vh;
 }
 /*# sourceMappingURL=main.css.map */
