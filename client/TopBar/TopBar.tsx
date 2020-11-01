@@ -2,6 +2,8 @@ import * as React from "react";
 
 export default function TopBar() {
   return (
-      <div>Hello World</div>
+      <div id='topbar'>
+          <p id='topbartext'>Welcome, mFuechec</p>
+      </div>
   )
 }
