@@ -1,7 +1,9 @@
-# Basic React App
+# Game Platform
 --- 
-Basic React App is a boilerplate that allows users to get started building React applications without the long slog of building out a basic file structure, configuring webpack or dealing with trifling syntax errors.
-The repository is easily installed and provides a basic component structure and server that will have you saying Hello World on localhost:3000 in minutes.
+Game Platform is a game platform.
+
+I'm planning to use this project as a coding sandbox that allows me to complete small, simple games in my freetime and display them all in one spot. The plan is to use 
+service oriented architecture, keeping the games separate and allowing lots of different technologies to be swapped in.
 # Get started
 
 From terminal in the root directory:
@@ -29,7 +31,7 @@ npm start
 </table>
 
 ## Front-End
-Basic React App was built with JavaScript, React, ExpressJs and Node.
+Game Platform was built with JavaScript, React, ExpressJs and Node.
 
 # Contributors
 
