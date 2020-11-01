@@ -1,10 +1,10 @@
 {
-  "name": "Game_Platform",
+  "name": "game-platform",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "nodemon server/server.js -e html, tsx, css",
     "client": "webpack -d --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,14 +20,18 @@
     "axios": "^0.19.2",
     "babel-loader": "^8.0.6",
     "express": "^4.17.1",
+    "lodash": "^4.17.20",
     "nodejs": "0.0.0",
     "nodemon": "^2.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router": "^5.2.0",
     "redux": "^4.0.5",
-    "typescript": "^4.0.5",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5"
   }
 }
