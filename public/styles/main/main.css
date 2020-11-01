@@ -6,7 +6,7 @@ body {
   overflow: hidden;
 }
 
-#app {
+#topContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,15 +22,14 @@ body {
   margin-top: 1.5vh;
 }
 
-#closedsidebar {
+#gamesMenuButton {
   width: 10vw;
+  border-radius: 0;
 }
 
-#closedsidebar:hover {
-  background-color: yellow;
-}
-
-#opensidebar {
+#sidebar {
   width: 10vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
