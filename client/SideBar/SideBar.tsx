@@ -18,7 +18,7 @@ export default function SideBar({openSideBar}) {
                     {availableGames.map((game) => {
                         return (
                             <>
-                                <p class='gameName'>{game.name}</p>
+                                <p className='gameName'>{game.name}</p>
                                 {/* <img src={game.image}/> */}
                             </>
                         )
