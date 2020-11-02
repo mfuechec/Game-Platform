@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default function SideBar({openSideBar}: {openSideBar: Boolean}) {
+export default function SideBar({openSideBar, select}: {openSideBar: Boolean, select: Function}) {
 
     // This component should look at the availableGames array stored in redux.
     // That array would be populated from a call to the database that brings in
@@ -9,7 +9,7 @@ export default function SideBar({openSideBar}: {openSideBar: Boolean}) {
     // The component simply maps over that array and displays images and links to
     // different games. Should be scrollable, if needed.
 
-    let availableGames = [{name: 'minesweeper', image: 'url'}, {name: 'tic-tac-toe', image: 'url'}]
+    let availableGames = [{name: 'minesweeper', image: 'https://mfuechec-portfolio.s3.us-east-2.amazonaws.com/Minesweeper-Thumbnail.png', link: 'https://marks-minesweeper.s3.us-east-2.amazonaws.com/index.html'}]
 
     if (openSideBar) {
         return (
@@ -17,10 +17,10 @@ export default function SideBar({openSideBar}: {openSideBar: Boolean}) {
                 <div id='sidebarContents'>
                     {availableGames.map((game) => {
                         return (
-                            <>
+                            <div onClick={()=>(select(game.link))}>
                                 <p className='gameName'>{game.name}</p>
-                                {/* <img src={game.image}/> */}
-                            </>
+                                <img src={game.image} className='gameImage'/>
+                            </div>
                         )
                     })}
                 </div>

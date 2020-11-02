@@ -7,9 +7,15 @@ import GamePortal from './GamePortal/GamePortal';
 export default function App() {
 
   let [openSideBar, setOpenSideBar] = React.useState(false);
+  let [selectedGame, setSelectedGame] = React.useState(null);
 
   function handleClick() {
     setOpenSideBar(!openSideBar);
+  }
+
+  function select(game: string) {
+    setSelectedGame(game);
+    setOpenSideBar(false);
   }
 
   return (
@@ -19,8 +25,8 @@ export default function App() {
         <TopBar/>
       </div>
       <div className='row'>
-        <SideBar openSideBar={openSideBar}/>
-        <GamePortal />
+        <SideBar openSideBar={openSideBar} select={select}/>
+        <GamePortal selectedGame={selectedGame} />
       </div>
     </>
   )

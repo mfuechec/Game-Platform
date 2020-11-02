@@ -41,11 +41,18 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   height: 95vh;
   width: 20vw;
+  position: absolute;
+  padding-top: 2.5vh;
 }
 
 .gameName {
   text-align: center;
   padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: x-large;
+  font-style: italic;
+  cursor: pointer;
+  z-index: 2;
 }
 
 #gamePortal {
@@ -54,7 +61,21 @@ p {
   height: 95vh;
 }
 
-#selection {
+#noSelection {
   margin-top: 49vh;
+}
+
+.gameImage {
+  height: 20vh;
+  width: 20vw;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#iframe {
+  height: 90vh;
+  width: 80vw;
+  overflow: hidden;
+  border: 0;
 }
 /*# sourceMappingURL=main.css.map */
