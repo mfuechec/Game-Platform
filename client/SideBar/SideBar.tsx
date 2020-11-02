@@ -15,9 +15,9 @@ export default function SideBar({openSideBar, select}: {openSideBar: Boolean, se
         return (
             <div id='sidebar'>
                 <div id='sidebarContents'>
-                    {availableGames.map((game) => {
+                    {availableGames.map((game, i) => {
                         return (
-                            <div onClick={()=>(select(game.link))}>
+                            <div onClick={()=>(select(game.link))} key={i}>
                                 <p className='gameName'>{game.name}</p>
                                 <img src={game.image} className='gameImage'/>
                             </div>

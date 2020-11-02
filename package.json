@@ -22,6 +22,7 @@
     "@types/react-dom": "^16.9.9",
     "@types/react-redux": "^7.1.9",
     "@types/redux": "^3.6.31",
+    "aws-sdk": "^2.783.0",
     "axios": "^0.19.2",
     "babel-loader": "^8.1.0",
     "express": "^4.17.1",
