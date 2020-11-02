@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default function SideBar({openSideBar}) {
+export default function SideBar({openSideBar}: {openSideBar: Boolean}) {
 
     // This component should look at the availableGames array stored in redux.
     // That array would be populated from a call to the database that brings in
